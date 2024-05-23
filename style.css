@@ -1,3 +1,35 @@
 body {
-    background-color: #6a5fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    margin-top: 20px; /* Abstand vom oberen Rand */
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+input {
+    display: block;
+    margin: 0 auto 20px auto;
+    padding: 10px;
+    width: 80%;
+    max-width: 300px;
+    box-sizing: border-box;
 }
