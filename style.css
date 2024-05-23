@@ -5,10 +5,16 @@ body {
     height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
+    background-image: url("C:\Users\User\Desktop\Datenbank\IMG_0012.JPG"');
+    background-size: cover;
+    background-position: center;
 }
 
 .container {
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Weiße, leicht durchsichtige Hintergrundfarbe */
+    padding: 20px;
+    border-radius: 10px;
     margin-top: 20px; /* Abstand vom oberen Rand */
 }
 
