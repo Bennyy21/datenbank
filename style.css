@@ -8,7 +8,7 @@ body {
     background-image: url("IMG_0012.JPG");
     background-size: cover;
     background-position: center;
-    backdrop-filter: blur(2px);
+    background-filter: blur(2px);
 }
 
 .container {
@@ -39,4 +39,22 @@ input {
     width: 80%;
     max-width: 300px;
     box-sizing: border-box;
+}
+select {
+    display: block;
+    margin: 0 auto 20px auto;
+    padding: 10px;
+    width: 80%;
+    max-width: 300px;
+    box-sizing: border-box;
+    appearance: none; /* Verhindert Standard-Dropdown-Styling */
+    border: 1px solid #ccc; /* Randstil */
+    border-radius: 5px; /* Abgerundete Ecken */
+    background-color: white; /* Hintergrundfarbe */
+}
+
+/* Stil für Hover- und Fokuszustand */
+select:hover,
+select:focus {
+    border-color: #555; /* Farbänderung beim Hovern oder Fokussieren */
 }
