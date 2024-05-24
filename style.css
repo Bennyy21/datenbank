@@ -8,12 +8,13 @@ body {
     background-image: url("IMG_0012.JPG");
     background-size: cover;
     background-position: center;
-    background-filter: blur(2px);
+    background-filter: blur(4px);
+    color: white;
 }
 
 .container {
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.8); /* Weiße, leicht durchsichtige Hintergrundfarbe */
+    background-color: rgb(46 46 46 / 74%); /* Weiße, leicht durchsichtige Hintergrundfarbe */
     padding: 20px;
     border-radius: 10px;
     margin-top: 20px; /* Abstand vom oberen Rand */
@@ -51,7 +52,16 @@ select {
     border: 1px solid #ccc; /* Randstil */
     border-radius: 5px; /* Abgerundete Ecken */
     background-color: white; /* Hintergrundfarbe */
+    font-size: 16px; /* Schriftgröße */
+    height: 40px; /* Erhöht die Höhe des Dropdown-Menüs */
 }
+
+/* Stil für Hover- und Fokuszustand */
+select:hover,
+select:focus {
+    border-color: #555; /* Farbänderung beim Hovern oder Fokussieren */
+}
+
 
 /* Stil für Hover- und Fokuszustand */
 select:hover,
