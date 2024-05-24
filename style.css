@@ -8,6 +8,7 @@ body {
     background-image: url("IMG_0012.JPG");
     background-size: cover;
     background-position: center;
+    backdrop-filter: blur(2px);
 }
 
 .container {
