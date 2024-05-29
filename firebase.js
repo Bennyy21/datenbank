@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', (event) => {
+
     // Your web app's Firebase configuration
     const firebaseConfig = {
   apiKey: "AIzaSyC2HQBdHqdRnRlFSzdUbblhmXu8w5L2zSA",
@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
+    document.addEventListener('DOMContentLoaded', (event) => {
 
     // Referenz zur Firebase-Datenbank
     var database = firebase.database();
