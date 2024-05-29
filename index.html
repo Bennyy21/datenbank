@@ -1,31 +1,30 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eventkalendar</title>
+    <title>Eventkalender</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Eventkalendar</h1>
+        <h1>Eventkalender</h1>
         <p>Hier kannst du alle deine Events eintragen, die du besucht hast oder besuchen möchtest.</p>
 
         <input type="text" id="eventname" name="eventname" placeholder="Eventname"><br><br>
 
         <input type="text" id="websitelink" name="websitelink" placeholder="Link zur Webseite"><br><br>
 
-       
-        <input type="date" id="eventdate" name="eventdate placeholder="Datum des Events"><br><br>
+        <input type="date" id="eventdate" name="eventdate" placeholder="Datum des Events"><br><br>
 
-        <input type="time" id="starttime" name="starttime placeholder="Eventname"><br><br>
+        <input type="time" id="starttime" name="starttime" placeholder="Startzeit"><br><br>
 
         <label for="eventtype">Art des Events:</label>
         <select id="eventtype" name="eventtype">
-        <option value="arbeit">Arbeit</option>
-        <option value="privat">Privat</option>
-    </select><br><br>
+            <option value="" disabled selected>Wähle eine Art des Events</option> <!-- Placeholder-Option -->
+            <option value="arbeit">Arbeit</option>
+            <option value="privat">Privat</option>
+        </select><br><br>
     </div>
 </body>
 </html>
-
