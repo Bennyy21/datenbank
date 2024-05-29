@@ -1,14 +1,14 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     // Your web app's Firebase configuration
-    var firebaseConfig = {
-        apiKey: "YOUR_API_KEY",
-        authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-        databaseURL: "https://YOUR_PROJECT_ID.firebaseio.com",
-        projectId: "YOUR_PROJECT_ID",
-        storageBucket: "YOUR_PROJECT_ID.appspot.com",
-        messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-        appId: "YOUR_APP_ID"
-    };
+    const firebaseConfig = {
+  apiKey: "AIzaSyC2HQBdHqdRnRlFSzdUbblhmXu8w5L2zSA",
+  authDomain: "bentleyseventkalender.firebaseapp.com",
+  databaseURL: "https://bentleyseventkalender-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "bentleyseventkalender",
+  storageBucket: "bentleyseventkalender.appspot.com",
+  messagingSenderId: "877220977131",
+  appId: "1:877220977131:web:a4ac3d50095f8ec341a1ae"
+};
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
 
