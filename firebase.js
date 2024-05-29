@@ -1,4 +1,4 @@
-
+//Moin
     // Your web app's Firebase configuration
     const firebaseConfig = {
   apiKey: "AIzaSyC2HQBdHqdRnRlFSzdUbblhmXu8w5L2zSA",
