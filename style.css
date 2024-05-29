@@ -20,7 +20,7 @@ body::before {
     background-image: url("IMG_0012.JPG");
     background-size: cover;
     background-position: center;
-    filter: blur(4px); /* Anwenden des Filters nur auf das Pseudo-Element */
+    filter: blur(2px); /* Anwenden des Filters nur auf das Pseudo-Element */
     z-index: -1; /* Stellt sicher, dass das Bild hinter dem Inhalt liegt */
 }
 
