@@ -5,19 +5,32 @@ body {
     height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
+    color: white;
+    position: relative; /* Notwendig für das ::before-Pseudo-Element */
+    overflow: hidden; /* Verhindert Scrollen */
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image: url("IMG_0012.JPG");
     background-size: cover;
     background-position: center;
-    background-filter: blur(4px);
-    color: white;
+    filter: blur(2px); /* Anwenden des Filters nur auf das Pseudo-Element */
+    z-index: -1; /* Stellt sicher, dass das Bild hinter dem Inhalt liegt */
 }
 
 .container {
     text-align: center;
-    background-color: rgb(46 46 46 / 74%); /* Weiße, leicht durchsichtige Hintergrundfarbe */
+    background-color: rgba(46, 46, 46, 0.74); /* Weiße, leicht durchsichtige Hintergrundfarbe */
     padding: 20px;
     border-radius: 10px;
     margin-top: 20px; /* Abstand vom oberen Rand */
+    z-index: 1; /* Stellt sicher, dass der Container über dem Hintergrundbild liegt */
 }
 
 h1 {
@@ -33,14 +46,7 @@ label {
     margin: 10px 0;
 }
 
-input {
-    display: block;
-    margin: 0 auto 20px auto;
-    padding: 10px;
-    width: 80%;
-    max-width: 300px;
-    box-sizing: border-box;
-}
+input,
 select {
     display: block;
     margin: 0 auto 20px auto;
@@ -48,22 +54,20 @@ select {
     width: 80%;
     max-width: 300px;
     box-sizing: border-box;
-    appearance: none; /* Verhindert Standard-Dropdown-Styling */
     border: 1px solid #ccc; /* Randstil */
     border-radius: 5px; /* Abgerundete Ecken */
     background-color: white; /* Hintergrundfarbe */
     font-size: 16px; /* Schriftgröße */
+}
+
+select {
+    appearance: none; /* Verhindert Standard-Dropdown-Styling */
     height: 40px; /* Erhöht die Höhe des Dropdown-Menüs */
 }
 
 /* Stil für Hover- und Fokuszustand */
-select:hover,
-select:focus {
-    border-color: #555; /* Farbänderung beim Hovern oder Fokussieren */
-}
-
-
-/* Stil für Hover- und Fokuszustand */
+input:hover,
+input:focus,
 select:hover,
 select:focus {
     border-color: #555; /* Farbänderung beim Hovern oder Fokussieren */
